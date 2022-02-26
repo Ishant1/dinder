@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import TinderCard from 'react-tinder-card'
 import faker from "@faker-js/faker"
-import { Container, Row, Col } from "react-bootstrap";
 import NavBar from '../components/NavBar';
 
 const Browse = () => {
@@ -54,7 +53,7 @@ const Browse = () => {
               );
             })}
           </div>
-          {lastDirection ? <h2 className='infoText'>You swiped {lastDirection}</h2> : <h2 className='infoText' />}
+          {lastDirection ? <h2 className='infoText'>You swiped {lastDirection}</h2> : <h2 className='infoText' > </h2>}
         </div>
       </div>
         

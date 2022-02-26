@@ -55,6 +55,22 @@ $main-font: Montserrat;
     font-weight: 600;
     letter-spacing: -2px;
   }
+
+  .right-content {
+    display: block;
+
+    .links {
+      display: block;
+
+      ul {
+        list-style: none;
+      }
+      ul li{
+        display: inline;
+        padding: 10px;
+      }
+    }
+  }
 }
 
 .cards {
@@ -91,4 +107,84 @@ $main-font: Montserrat;
     height: 100%;
   }
   
+}
+
+
+
+.profile {
+  margin:auto;
+  width:100%;
+  max-width: 1000px;
+  text-align: left;
+  padding: 20px;
+  
+  h2 {
+    font-weight: 800;;
+  }
+
+  .detail-holder {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .details { 
+    flex-grow:1;
+    padding: 20px;
+    border: 1px solid black;
+
+    &.personal {
+      text-align: left;
+
+      .name, .age{
+        display: inline;
+      }
+
+      .age {
+        color: rgb(83, 83, 83);
+      }
+
+      .breed {
+        display: block;
+      }
+    }
+
+    .image-cropper {
+      width: 300px;
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 50%;
+      text-align: center;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      margin-bottom: 30px;
+    }
+    
+    .profile-pic {
+      display: inline;
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+    }
+
+    .matches {
+      
+      .match {
+        padding: 10px;
+
+        img {
+          height: 50px;
+          display: inline;
+          border-radius: 100px;
+        }
+
+        .match-details {
+          display: inline-block;
+
+          span{
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
 }

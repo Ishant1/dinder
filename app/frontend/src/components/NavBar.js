@@ -5,20 +5,23 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const NavBar = () => {
 
-    const { user, isAuthenticated, isLoading } = useAuth0();
+    const { user, isAuthenticated } = useAuth0();
 
     return (
         <div className="navbar">
             <h1 className="logo" >Dinder</h1>
             <div className="right-content">
+            <div className="links">
+                <ul>
+                    <li><Link to={"/browse"}>Find Matches</Link></li>
+                    <li><Link to={"/profile"}>Profile</Link></li>
+                </ul>
+            </div>
             {isAuthenticated &&
                 <>Hi, {user.name}</>
             }
-            <div className="links">
-                <li>
-                    <Link to={"/browse"}>Find Matches</Link>
-                </li>
-            </div>
+            
+
             <AuthButton />
             
             </div>
