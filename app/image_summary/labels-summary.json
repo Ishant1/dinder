@@ -1,0 +1,16 @@
+{
+  "examples": [
+    {
+      "labels": ["Creta","White","dog","playing","swimming","cars"],
+      "summary": "Creta my white dog loves to swim and play in playgrounds. She also loves to run behind cars."
+    },
+    {
+      "labels": ["Bob","big","dog","sleeping","couch","outdoor"],
+      "summary": "Bob is a large dog who loves to nap on his favourite couch and play outdoors"
+    },
+    {
+      "labels": ["Mindy","Cat","scratching","playing","toys","sleeping","sun"],
+      "summary": "Mindy my beautiful cat loves to play with her toys and sleep in the sun"
+    }
+  ]
+}
