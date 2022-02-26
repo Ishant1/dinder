@@ -4,6 +4,8 @@ import './App.scss';
 import Profile from './Profile';
 import Login from './Login';
 import Dashboard from './Dashboard';
+import Browse from './Browse';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -19,6 +21,7 @@ function App() {
         <Route path="/" element={<Dashboard />}/>
         <Route path="/login" element={<Login />}/>
         <Route path="/profile" element={<Profile/>}/>
+        <Route path="/browse" element={<Browse/>}/>
 
       </Routes>
     </div>
