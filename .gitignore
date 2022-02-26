@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# React App Ignores
+/app/frontend/node_modules
+.env
+KEYS.json
