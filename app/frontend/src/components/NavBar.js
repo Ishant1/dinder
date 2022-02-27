@@ -16,6 +16,7 @@ const NavBar = () => {
             <div className="right-content">
             <div className="links">
                 <ul>
+                    <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"/browse"}>Find Matches</Link></li>
                     <li><Link to={"/profile"}>Profile</Link></li>
                     <li><Link to={"/signup"}>AI Bio - Signup</Link></li>

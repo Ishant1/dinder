@@ -41,6 +41,15 @@ $main-font:'League Spartan', sans-serif;;
   }
 }
 
+.content {
+  padding: 40px;
+
+  img {
+    max-width: 100%;
+    width:500px;
+  }
+}
+
 .navbar {
   display: flex;
   padding: 40px 20px 20px 20px;
@@ -250,9 +259,36 @@ $main-font:'League Spartan', sans-serif;;
   }
 }
 
+.form-holder {
+  width: 100%;
+  margin:auto;
+  width: 400px;
+  margin: 20px auto;
+
+  .bio {
+    margin: 10px 0px;
+    background-color: #3c77ec;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  }
+}
+
+.generator {
+  margin: 30px 0px;
+  width: 100%;
+  color: red;
+}
+
 form {
-  text-align: left;;
+  text-align: left;
+
+
   input {
     display: block;
+    width: 100%;
   }
+
 }

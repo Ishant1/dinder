@@ -28,33 +28,45 @@ const Signup = () => {
     return (
         <div className="main">
             <NavBar />
-            <form onSubmit={handleSubmit(onSubmit)}>
-            {/* register your input into the hook by invoking the "register" function */}
-            
-            {/* include validation with required or other standard HTML validation rules */}
-            <label>Name</label>
-            <input {...register("name", { required: true })} />
-            <label>Breed</label>
-            <input {...register("breed", { required: true })} />
-            <label>Treat</label>
-            <input {...register("treat", { required: true })} />
-            <label>Park</label>
-            <input {...register("park", { required: true })} />
-            <label>Trick</label>
-            <input {...register("trick", { required: true })} />
-            <button
-        type="button"
-        onClick={() => {Generate(getValues())}}
-      >
-        Get Values
-      </button>
+            <div className="form-holder">
 
-            {/* errors will return when field validation fails  */}
-            {errors.exampleRequired && <span>This field is required</span>}
-            
-            <input type="submit" />
-            </form>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                {/* register your input into the hook by invoking the "register" function */}
+                
+                {/* include validation with required or other standard HTML validation rules */}
+                <label>Name</label>
+                <input {...register("name", { required: true })} />
+                <label>Breed</label>
+                <input {...register("breed", { required: true })} />
+                <label>Treat</label>
+                <input {...register("treat", { required: true })} />
+                <label>Park</label>
+                <input {...register("park", { required: true })} />
+                <label>Trick</label>
+                <input {...register("trick", { required: true })} />
+                <button
+                className="generator"
+            type="button"
+            onClick={() => {Generate(getValues())}}
+        >
+            GENERATE AI BIO
+        </button>
+
+                {/* errors will return when field validation fails  */}
+                {errors.exampleRequired && <span>This field is required</span>}
+                
+                <input type="submit" />
+                </form>
+                {bio && (
+                <div className="bio">
+                <h1>Your Generated Bio</h1>
             {bio}
+                </div>
+                )
+                
+                }
+
+            </div>
         </div>
         /* "handleSubmit" will validate your inputs before invoking "onSubmit" */
       );
