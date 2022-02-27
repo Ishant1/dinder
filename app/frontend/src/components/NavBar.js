@@ -9,7 +9,10 @@ const NavBar = () => {
 
     return (
         <div className="navbar">
-            <h1 className="logo" >Dinder</h1>
+            <div className="logo">
+                <img src="logo.png" alt="logo"/>
+                <h1 >Dinder</h1>
+            </div>
             <div className="right-content">
             <div className="links">
                 <ul>
@@ -17,12 +20,12 @@ const NavBar = () => {
                     <li><Link to={"/profile"}>Profile</Link></li>
                 </ul>
             </div>
-            {isAuthenticated &&
-                <>Hi, {user.name}</>
-            }
-            
-
-            <AuthButton />
+            <div className="other-stuff">
+                {isAuthenticated &&
+                    <>Hi, {user.name}</>
+                }
+                <AuthButton />
+            </div>
             
             </div>
             

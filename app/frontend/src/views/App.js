@@ -5,6 +5,7 @@ import Profile from './Profile';
 import Login from './Login';
 import Dashboard from './Dashboard';
 import Browse from './Browse';
+import DogChat from './DogChat';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<Login />}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/browse" element={<Browse/>}/>
+        <Route path="/chat" element={<DogChat/>}/>
 
       </Routes>
     </div>

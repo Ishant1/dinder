@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,600;0,800;1,400;1,600;1,800&display=swap');
-
-$main-font: Montserrat;
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;800&display=swap');
+$main-font:'League Spartan', sans-serif;;
 
 .App {
   text-align: center;
@@ -44,23 +43,41 @@ $main-font: Montserrat;
 
 .navbar {
   display: flex;
-  padding: 20px;
+  padding: 40px 20px 20px 20px;
   background: rgb(247,112,86);
   background: linear-gradient(54deg, rgba(247,112,86,1) 0%, rgba(245,44,117,1) 100%);
   opacity: 1;
   color:white;
   justify-content: space-between;
 
+  
+
   .logo {
-    font-weight: 600;
-    letter-spacing: -2px;
+    display: block  ;
+
+    img {
+      height: 60px;
+      display: inline-block;
+      margin-top:-20px;
+    }
+
+    h1 {
+      font-weight: 600;
+      letter-spacing: -2px;
+      display: inline-block;
+    }
+    
   }
 
   .right-content {
-    display: block;
+    display: inline;
 
-    .links {
-      display: block;
+    .other-stuff {
+      display: inline-block;
+    }
+
+    .links {     
+      display: inline-block;
 
       ul {
         list-style: none;
@@ -69,6 +86,16 @@ $main-font: Montserrat;
         display: inline;
         padding: 10px;
       }
+
+      a {
+        text-decoration: none;
+        color:white;
+        
+      }
+    }
+
+    button {
+      display: inline;
     }
   }
 }
@@ -129,15 +156,18 @@ $main-font: Montserrat;
 
   .details { 
     flex-grow:1;
-    padding: 20px;
-    border: 1px solid black;
+    padding: 20px;  
     width: 50%;
 
     &.personal {
       text-align: left;
 
       .breed, .age{
-       display: inline;
+       display: block;
+      }
+
+      .name {
+        display: inline;
       }
 
       .age {
@@ -147,6 +177,12 @@ $main-font: Montserrat;
       .breed {
         display: block;
         font-weight: 800;;
+      }
+
+      .verified {
+        height: 25px;
+        margin-top: -10px;
+        margin-left: 10px;
       }
 
       .bio {
@@ -174,7 +210,13 @@ $main-font: Montserrat;
     }
 
     .matches {
-      
+      background-color: #3c77ec;
+      color:white;
+      padding: 20px;
+      border-radius: 20px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+
       .match {
         padding: 10px;
 
@@ -182,6 +224,7 @@ $main-font: Montserrat;
           height: 50px;
           display: inline;
           border-radius: 100px;
+          margin-top: -20px;
         }
 
         .match-details {
@@ -189,6 +232,17 @@ $main-font: Montserrat;
 
           span{
             display: inline-block;
+            font-size: 18px;
+            margin-bottom:-5px;
+          }
+
+          .breed {
+            margin-left: 30px;
+            text-transform: capitalize;
+          }
+
+          .name {
+            font-weight: 600;;
           }
         }
       }

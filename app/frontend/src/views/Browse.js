@@ -15,8 +15,9 @@ const Browse = () => {
         for (let i = 0; i < 10; i++) {
             var randomName = faker.name.findName();
             var img = faker.image.animals()+"?random=" + Math.round(Math.random() * 1000);
+            var uuid = faker.datatype.uuid();
             console.log(img);
-            temp.push({name: randomName, avatar: img});
+            temp.push({name: randomName, avatar: img, id: uuid});
         };
         setUsers({
             ...users,
@@ -36,8 +37,6 @@ const Browse = () => {
         setLastDirection(direction)
       }
 
-
-
     return (
       <div className="main">
         <NavBar/>
@@ -45,7 +44,7 @@ const Browse = () => {
           <div className="cardContainer">
             {!loading && users.users.map((user, index) => {
               return (
-                <TinderCard className='swipe' key={index} onSwipe={(dir) => swiped(dir, user.name)} onCardLeftScreen={() => outOfFrame(user.name)}>
+                <TinderCard className='swipe' key={index} onSwipe={(dir) => swiped(dir, user.name)} onCardLeftScreen={() => outOfFrame(user.id)}>
                   <div style={{ backgroundImage: 'url(' + user.avatar + ')' }} className='card'>
                   <h3>{user.name}</h3>
                 </div>

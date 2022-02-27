@@ -9,7 +9,8 @@ const matchData = (num) => {
     let temp = {
       id: faker.datatype.uuid(),
       name: faker.name.firstName(),
-      img: faker.image.animals()+"?random=" + Math.round(Math.random() * 1000)
+      img: faker.image.animals()+"?random=" + Math.round(Math.random() * 1000),
+      breed: faker.animal.type()
     }
     res.push(temp);
   };
@@ -36,7 +37,7 @@ const Profile = () => {
             <div className="image-cropper">
               <img className="profile-pic" src="doggo-meme.jpg" alt="dog"/>
             </div>
-            <h3 className="name">Lexi</h3>
+            <h3 className="name">Lexi</h3><img className="verified" src="verified.png" alt="verified"/>
             <span className="age">3 years old</span>
             <span className="breed">Cockapoo</span>
             <span className="bio">Bio:</span>
@@ -47,15 +48,15 @@ const Profile = () => {
               learning is writing soon.
             </p>
           </div>
-          <div className="details">
-            <h3>Your Matches</h3>
+          <div className="details matches">
             <div className="matches">
+              <h3>✨ Your Matches ✨</h3>
               {matches.map(match => (
                 <div className="match">
                   <img src={match.img} alt="profile"/>
                   <div className="match-details">
-                    <span>✨ {match.name}</span><br/>
-                    <span>{match.id}</span>
+                    <span className="name">✨ {match.name}</span><br/>
+                    <span className="breed">{match.breed}</span>
                   </div>
                 </div>
               ))}
