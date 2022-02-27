@@ -36,7 +36,8 @@ const Profile = () => {
             <div className="image-cropper">
               <img className="profile-pic" src="doggo-meme.jpg" alt="dog"/>
             </div>
-            <h3 className="name">Lexi • </h3><span className="age">3 years old</span>
+            <h3 className="name">Lexi</h3>
+            <span className="age">3 years old</span>
             <span className="breed">Cockapoo</span>
             <span className="bio">Bio:</span>
             <p>

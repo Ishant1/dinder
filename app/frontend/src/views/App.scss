@@ -131,12 +131,13 @@ $main-font: Montserrat;
     flex-grow:1;
     padding: 20px;
     border: 1px solid black;
+    width: 50%;
 
     &.personal {
       text-align: left;
 
-      .name, .age{
-        display: inline;
+      .breed, .age{
+       display: inline;
       }
 
       .age {
@@ -145,6 +146,12 @@ $main-font: Montserrat;
 
       .breed {
         display: block;
+        font-weight: 800;;
+      }
+
+      .bio {
+        margin-top:10px;
+        color: rgb(83, 83, 83);
       }
     }
 
