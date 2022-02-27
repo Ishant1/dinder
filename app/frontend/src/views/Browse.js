@@ -53,10 +53,15 @@ const Browse = () => {
           .then(response => console.log(response));
           console.log("okay imma send this to flask")
         }
-        
+
         const headers = { id1: 2, id2: id  };
         axios.post('https://dinder1-rtzfqvvfia-nw.a.run.app/seenuser', headers)
           .then(response => console.log(response));
+      }
+
+      const resetMatches = () => {
+        axios.get("https://dinder1-rtzfqvvfia-nw.a.run.app/resetdata")
+        .then(res => console.log(res));
       }
 
     return (
@@ -76,6 +81,7 @@ const Browse = () => {
             })}
           </div>
           {lastDirection ? <h2 className='infoText'>You swiped {lastDirection}</h2> : <h2 className='infoText' > </h2>}
+            <button onClick={() => resetMatches()}>Reset Matches</button>
         </div>
       </div>
         
