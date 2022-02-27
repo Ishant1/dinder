@@ -18,6 +18,7 @@ const NavBar = () => {
                 <ul>
                     <li><Link to={"/browse"}>Find Matches</Link></li>
                     <li><Link to={"/profile"}>Profile</Link></li>
+                    <li><Link to={"/signup"}>Signup!!!!</Link></li>
                 </ul>
             </div>
             <div className="other-stuff">
