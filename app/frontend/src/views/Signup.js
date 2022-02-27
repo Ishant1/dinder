@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import NavBar from "../components/NavBar";
 import axios from "axios";
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0, withAuthenticationRequired } from '@auth0/auth0-react';
 
 const Signup = () => {
     const [bio, setBio] = useState("")
@@ -72,4 +72,6 @@ const Signup = () => {
       );
 }
 
-export default Signup;
+export default withAuthenticationRequired(Signup, {
+    onRedirecting: () => <>Loading</>,
+  });
