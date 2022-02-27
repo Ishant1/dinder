@@ -1,1 +1,6 @@
-dog_id,name,status char,breed char,height,weight,fitness,favTreats,favPark,bestTrick,datingHistory,bio
+id,name,breed,favTreats,favPark,bestTrick,bio
+1,Poppy,Poddle,macroons,hyde park,sleep,Rest everyday till she can
+2,bobby,Poddle,fruits,hyde park,sleep,Rest everyday till he can
+3,Rosh,Poddle,sweets,hyde park,sleep,Rest everyday till he can
+4,Bob,Poddle,macroons,hyde park,sleep,Rest everyday till he can
+5,Rob,Poddle,macroons,hyde park,sleep,Rest everyday till he can

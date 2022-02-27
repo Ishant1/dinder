@@ -2,8 +2,8 @@ import pandas as pd
 
 data_loc = 'app/Data'
 
-customer = pd.DataFrame(columns = ['id', 'email', 'password', 'dog_id'])
-dogs = pd.DataFrame(columns = ['dog_id', 'name', 'status char', 'breed char', 'height', 'weight',
+customer = pd.DataFrame(columns = ['id', 'email', 'password'])
+dogs = pd.DataFrame(columns = ['id', 'name', 'status char', 'breed char', 'height', 'weight',
                        'fitness' , 'favTreats', 'favPark', 'bestTrick', 'datingHistory',
                        'bio' ])
 
