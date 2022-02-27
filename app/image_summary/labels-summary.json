@@ -1,0 +1,16 @@
+{
+  "examples": [
+    {
+      "labels": ["Creta","Cockapoo","Meal Deal","Hyde Park","Summersolt"],
+      "summary": "Hey, I am a sexy little cockapoo, I like to play with other dogs in Hyde Park. I do super cool summersaults when I am eating my Meal Deal"
+    },
+    {
+      "labels": ["Fraser","Cockapoo","biscuits","green park","catch"],
+      "summary": "Im just a shy little cockapoo"
+    },
+    {
+      "labels": ["Linda","Labrador","chicken puppymince","backyard","sleep"],
+      "summary": "Hi guys, sociable and fun black lab here - Linda's the name! I love overdosing on chicken puppy mints and dosing off in my neighbour's backyard."
+    }
+  ]
+}
