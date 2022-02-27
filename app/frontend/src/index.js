@@ -5,18 +5,15 @@ import App from './views/App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { Auth0Provider } from "@auth0/auth0-react";
+import Auth0ProviderWithHistory from "./auth/AuthHistory"
 
 ReactDOM.render(
   <BrowserRouter>
-    <Auth0Provider
-      domain="dev--jld3s8a.eu.auth0.com"
-      clientId="jt1T2GuAEvrfFqITlK5tRZpfYt24loVB"
-      redirectUri={window.location.origin}
-    >
+    <Auth0ProviderWithHistory>
     
       <App />
   
-    </Auth0Provider>
+    </Auth0ProviderWithHistory>
   </BrowserRouter>,
   document.getElementById('root')
 );
